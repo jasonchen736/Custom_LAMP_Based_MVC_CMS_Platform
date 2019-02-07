@@ -1,0 +1,32 @@
+RewriteEngine on
+
+# Use PHP5.4 Single php.ini as default
+AddHandler application/x-httpd-php54s .php
+
+RewriteCond %{HTTP_HOST} !^(www|cmsadmin)\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# ADMIN
+
+RewriteCond %{HTTP_HOST} ^cmsadmin.DOMAIN.com$
+RewriteCond %{REQUEST_URI} !^/apps/admin/www/
+RewriteCond %{DOCUMENT_ROOT}/apps/admin/www%{REQUEST_URI} -s [OR]
+RewriteCond %{DOCUMENT_ROOT}/apps/admin/www%{REQUEST_URI} -l [OR]
+RewriteCond %{DOCUMENT_ROOT}/apps/admin/www%{REQUEST_URI} -d
+RewriteRule ^(.*)$ /apps/admin/www%{REQUEST_URI} [L]
+
+RewriteCond %{HTTP_HOST} ^cmsadmin.DOMAIN.com$
+RewriteCond %{REQUEST_URI} !^/apps/admin/www/
+RewriteRule ^(.*)$ /apps/admin/www/%{REQUEST_URI} [L]
+
+# MAIN
+
+RewriteCond %{REQUEST_URI} !^/apps/main/www/
+RewriteCond %{DOCUMENT_ROOT}/apps/main/www%{REQUEST_URI} -s [OR]
+RewriteCond %{DOCUMENT_ROOT}/apps/main/www%{REQUEST_URI} -l [OR]
+RewriteCond %{DOCUMENT_ROOT}/apps/main/www%{REQUEST_URI} -d
+RewriteRule ^(.*)$ /apps/main/www%{REQUEST_URI} [L]
+
+RewriteCond %{REQUEST_URI} !^/apps/main/www/
+RewriteRule ^(.*)$ /apps/main/www/%{REQUEST_URI} [L]
+

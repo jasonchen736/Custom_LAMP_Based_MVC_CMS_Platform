@@ -1,0 +1,97 @@
+/* GLOBAL */
+body, td, th {font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding: 0; margin: 0; background:#9f2230}
+body {color: #292B2B}
+a {font-family: Arial, Helvetica, sans-serif; color: #8f1428; text-decoration: none}
+a img {border: 0}
+a:hover {color:  #8f8c79;}
+form {margin: 0; padding: 0}
+input {font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+.clear {clear: both; width: 0px; height: 0px}
+.hidden {display: none}
+.show {display: block}
+.center {text-align: center}
+
+.header_links {font-size:14px;}
+h1 {font-size:18px;}
+
+/* SITE LAYOUT */
+div#siteBody {}
+div#siteMain {width: 1000px; margin: 0 auto; background-color: #FFFFFF; padding: 0 30px;}
+div#siteContent{min-height: 600px;}
+
+/* GENERAL */
+input.barLink {background-color: #ecf0f1; border: 0; border-left: 10px solid #92ca00; color: #292b2b; display: block; font-weight: bold; padding: 5px 10px 4px 10px; text-align: center}
+a.barLink {background-color: #ecf0f1; border-left: 10px solid #335B90; color: #292b2b; display: block; font-weight: bold; padding: 5px 10px 4px 10px; text-align: center}
+a.blueLink {color: #4680C9}
+a.grnBrdrBtn {background-color: #ecf0f1; border-left: 10px solid #92ca00; color: #292b2b; display: inline-block; font-weight: bold; padding: 5px 10px 4px 10px; text-align: center}
+
+/* HEADER */
+div#siteHeader {padding: 10px 0 0 0; position: relative}
+div#siteHeader div#languageSelectContainer {position: relative; float: right; top: 10px}
+div#siteHeader div#languageSelectLabel {float: right; margin-right: 5px; margin-top: 6px}
+div#siteHeader div#languageSelect {background: transparent url('/images/layout/headerInputBG.png') right top no-repeat; height: 25px; line-height: 25px; width: 179px; z-index: 3001; float: right}
+div#siteHeader div#languageSelect div#currentLanguage {margin-left: 10px; float: right; width: 180px; cursor: pointer; padding-top: 1px}
+div#siteHeader div#languageSelect div#currentLanguage img {position: relative; top: 2px; margin-left: 8px}
+div#siteHeader div#languageSelect div#languageDropdown {background-color: #eef1f1; float: right; width: 180px; display: none}
+div#siteHeader div#languageSelect div#languageDropdown a {display: block; padding-left: 8px}
+div#siteHeader div#languageSelect div#languageDropdown a:hover {background: #eef1f1 url('/images/layout/subMenuActiveBG.png') repeat-x left top}
+div#siteHeader div#languageSelect div#languageDropdown a img {position: relative; top: 2px}
+div#siteHeader div#headerOptions {position: absolute; right: 0; top: 55px; overflow: hidden}
+div#siteHeader div#headerOptions a {display: block; float: right; margin-right: 6px; height: 24px}
+div#siteHeader div#headerOptions a span {position: relative; top: -6px}
+div#siteHeader div#headerOptions a.noIcon span {top: 6px}
+
+/* TOP NAV */
+div#topNavContainer {padding-top: 10px; padding-bottom: 10px; width: 100%; height: 30px; margin-bottom: 10px; margin-top:10px;}
+ul#topNav {display: block; list-style: none outside none; margin: 0; padding: 0; z-index: 3000}
+ul#topNav ul {margin: 0; padding: 0}
+ul#topNav li.separator {color: #999999; float: left; margin: 7px 7px 0 10px; width: 1px}
+ul#topNav a {display: inline-block; font-weight: bold; text-decoration: none; font-size: 14px; white-space: nowrap;}
+ul#topNav li.topNavItem {float: left}
+ul#topNav li.topNavItem.active, ul#topNav li.topNavItem.current {}
+ul#topNav li.topNavItem a.topNav {color: white; padding: 7px 7px 7px 10px}
+ul#topNav li.topNavItem.active a.topNav, ul#topNav li.topNavItem.current a.topNav {}
+ul#topNav li.topNavItem.current{1background:#938b7e; background:#9f2230;}
+ul#topNav li.topNavItem ul.subNav {list-style: none; display: none; position: absolute; z-index: 2000}
+ul#topNav li.topNavItem ul.subNav li.subNavItem {background-color: #eef1f1; border-top: 1px solid #e3e7e5; float: none; position: relative}
+ul#topNav li.topNavItem ul.subNav li.subNavItem.active {background: #eef1f1 url('/images/layout/subMenuActiveBG.png') repeat-x left top}
+ul#topNav li.topNavItem ul.subNav li.subNavItem a.sub1Nav {padding: 5px 10px; color: #4797d1}
+ul#topNav li.topNavItem ul.subNav li.subNavItem.active a.sub1Nav {color: #4797d1}
+ul#topNav li.topNavItem ul.subNav li.subNavItem.active.hasSub a.sub1Nav {padding-right: 40px; background: transparent url('/images/layout/subMenuArrow.png') no-repeat right -2px}
+ul#topNav li.topNavItem.active ul.subNav {display: block}
+ul#topNav li.topNavItem ul.subNav li.subNavItem ul {list-style: none; display: none; position: absolute; z-index: 1000; top: -1px}
+ul#topNav li.topNavItem ul.subNav li.subNavItem ul li {float: none; background-color: #E2E6E5}
+ul#topNav li.topNavItem ul.subNav li.subNavItem ul li.active {background: #E2E6E5 url('/images/layout/subMenuActiveBG.png') repeat-x left top}
+ul#topNav li.topNavItem ul.subNav li.subNavItem ul li a.sub2Nav {color: #4797d1; padding: 6px 10px 5px 10px}
+ul#topNav li.topNavItem ul.subNav li.subNavItem ul li.active a.sub2Nav {}
+ul#topNav li.topNavItem ul.subNav li.subNavItem.active ul {display: block}
+
+/* FOOTER */
+div#siteFooter {overflow: hidden; padding-bottom: 19px; height:85px; background:url('/images/ind-physics-footer-bg.jpg');}
+div#siteFooter div#footerLogos {text-align: right}
+div#siteFooter div#footerInfo { overflow: hidden; margin-top: 15px; color:white; margin-left: 10px; margin-right: 10px;}
+div#siteFooter div#footerInfo ul {margin: 0; padding: 0; list-style: none; float: right}
+div#siteFooter div#footerInfo ul li {float: left; padding: 0 0 0 5px}
+
+/* MESSAGES */
+div.messageContainer {background-color: #FFF; padding: 0; position: relative; margin: 15px 0; border: 2px solid #315A8E}
+div.messageContainer ul {list-style: none; padding: 10px 0 10px 50px; margin: 10px 15px 10px 40px; color: #000}
+div.messageContainer ul.error {}
+div.messageContainer ul.success {}
+div.messageContainer ul.general {}
+
+/* LOGIN */
+div#loginContainer {border: 2px solid #EFEFEF; padding: 2px; width: 250px; margin: 40px auto 0}
+div#loginSubcontainer {background-color: #EFEFEF; padding: 10px; color: #666666; font-weight: normal}
+div#loginSubcontainer table {margin: 0 auto}
+div#loginSubcontainer input.button {margin: 0 0 0 13px}
+
+/* ADMIN PANEL */
+div#adminPanel {position: absolute; top: 20px; right: 20px; padding: 20px; background-color: #FFFFFF; color: #000000; border: 2px solid #000000}
+
+/* POP FORMS */
+div.popForm {display: none; background-color: #FFFFFF; padding: 20px; border: 2px solid #000000; border-radius: 5px; position: relative; z-index: 9999}
+div.popForm a.closePopForm {display: block; position: absolute; top: 0; right: 0; font-weight: bold; color: #FFFFFF; background-color: #000000; padding: 0 4px 2px 5px; border: 1px solid #000000; border-right: 0; border-top: 0; border-radius: 0 0 0 5px}
+
+/* CAPTCHA */
+.captcha a.reloadCaptcha {display: block; text-align: center}
