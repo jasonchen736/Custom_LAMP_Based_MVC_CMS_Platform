@@ -2,7 +2,7 @@
 
 This platform was built starting in 2008 using the LAMP stack (PHP 5, MYSQL 5); it's been through a couple of versions and my last updates to it were in 2015.
 
-It uses a Model View Controller architecture with an Active Record based data model, rudimentary ORM built into the model, and Smarty Template Engine for view templates.
+It uses a Model View Controller architecture with an Active Record based data model, Smarty Template Engine for view templates, and rudimentary ORM built into the model.
 
 I've built in a few convenience classes and wrappers to handle things like auth, email, caching, data change history loggin, database query and results, form handling, etc.
 
