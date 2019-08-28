@@ -36,8 +36,8 @@ The platform is currently used on ~10 live client web sites.
     - Main
   - Base Classes (MVC and general functions)
   - Classes
-  - Data Views (Admin Table View Classes)
+  - Data Views (Admin table view classes)
   - Fonts
-  - Library (Vendor Libraries)
+  - Library (Vendor libraries)
   - Models
-  - SQL (database files)
+  - SQL (Database files)
