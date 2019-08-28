@@ -22,18 +22,18 @@ The platform is currently used on ~10 live client web sites.
 # Folder Structure
 
 - Platform Root
- - Applications
-  - Admin
-   - Build (CRUD auto generation script)
-   - Conf
-   - Controllers
-   - Templates
-    - Source (Template source files)
-   - WWW (Web root)
-    - CSS
-    - JS
-    - Images
-   - Main
+  - Applications
+    - Admin
+      - Build (CRUD auto generation script)
+      - Conf
+      - Controllers
+      - Templates
+        - Source (Template source files)
+      - WWW (Web root)
+        - CSS
+        - JS
+        - Images
+    - Main
   - Base Classes (MVC and general functions)
   - Classes
   - Data Views (Admin Table View Classes)
